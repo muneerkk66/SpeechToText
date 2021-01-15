@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CF3CF7A1864ED65E23F9C93C /* Pods_SpeechToText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B06BC92D2B3220E6D3518B0 /* Pods_SpeechToText.framework */; };
 		E4A4DABD25B1A7E1003F79BD /* SpeechVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A4DABC25B1A7E1003F79BD /* SpeechVM.swift */; };
+		E4A4DB1325B22F18003F79BD /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = E4A4DB1225B22F18003F79BD /* License.txt */; };
 		E4AE085B25B0C8B000300521 /* GoogleSpeechManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AE085A25B0C8B000300521 /* GoogleSpeechManager.swift */; };
 		E4B8793C25AF2ACB008164EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B8793B25AF2ACB008164EA /* AppDelegate.swift */; };
 		E4B8793E25AF2ACB008164EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B8793D25AF2ACB008164EA /* SceneDelegate.swift */; };
@@ -30,6 +31,7 @@
 		E4A4DAD025B1A9FB003F79BD /* RxLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4A4DAD125B1A9FB003F79BD /* RxRelay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxRelay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4A4DAD225B1A9FB003F79BD /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4A4DB1225B22F18003F79BD /* License.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
 		E4AE085A25B0C8B000300521 /* GoogleSpeechManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSpeechManager.swift; sourceTree = "<group>"; };
 		E4B8793825AF2ACB008164EA /* SpeechToText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechToText.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B8793B25AF2ACB008164EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				E4B8796625AF2CD8008164EA /* AppConstants.swift */,
+				E4A4DB1225B22F18003F79BD /* License.txt */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4A4DB1325B22F18003F79BD /* License.txt in Resources */,
 				E4B8794825AF2ACE008164EA /* LaunchScreen.storyboard in Resources */,
 				E4B8794525AF2ACE008164EA /* Assets.xcassets in Resources */,
 				E4B8794325AF2ACB008164EA /* Main.storyboard in Resources */,
