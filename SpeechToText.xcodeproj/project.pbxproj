@@ -91,9 +91,7 @@
 		E4B8793A25AF2ACB008164EA /* SpeechToText */ = {
 			isa = PBXGroup;
 			children = (
-				E4B8795525AF2B41008164EA /* Views */,
 				E4B8795425AF2B32008164EA /* Utils */,
-				E4B8795225AF2B10008164EA /* Model */,
 				E4B8795125AF2B04008164EA /* ViewModel */,
 				E4B8795025AF2AF0008164EA /* ViewController */,
 				E4B8793B25AF2ACB008164EA /* AppDelegate.swift */,
@@ -126,13 +124,6 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		E4B8795225AF2B10008164EA /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		E4B8795425AF2B32008164EA /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,13 +131,6 @@
 				E4A4DB1225B22F18003F79BD /* License.txt */,
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		E4B8795525AF2B41008164EA /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		FDF792512DB0225EABB513E8 /* Pods */ = {
