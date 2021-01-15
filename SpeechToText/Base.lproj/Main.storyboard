@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SpeechToText" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="K8w-fg-5fT">
+                                <rect key="frame" x="20" y="94" width="374" height="300"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="7hj-XU-Bfy"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NWZ-gL-q6h">
+                                <rect key="frame" x="20" y="434" width="177" height="50"/>
+                                <color key="backgroundColor" red="0.51719005439999999" green="0.56686091199999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="JPr-zU-HjQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Record">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="micButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qDN-Cm-Pt9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZH-Z0-89H">
+                                <rect key="frame" x="217" y="434" width="177" height="50"/>
+                                <color key="backgroundColor" red="0.51719005439999999" green="0.56686091199999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="mwz-ZG-57H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="playAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="drw-9H-Q3O"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="7fI-cK-Wyg">
+                                <rect key="frame" x="197" y="194" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="3vG-jz-aQF"/>
+                                    <constraint firstAttribute="height" constant="20" id="VLI-hm-zg1"/>
+                                </constraints>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KZH-Z0-89H" firstAttribute="leading" secondItem="NWZ-gL-q6h" secondAttribute="trailing" constant="20" id="14n-pc-t74"/>
+                            <constraint firstItem="7fI-cK-Wyg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="3aZ-6b-xny"/>
+                            <constraint firstItem="K8w-fg-5fT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6mL-lM-TDp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K8w-fg-5fT" secondAttribute="trailing" constant="20" id="KxD-bf-PaU"/>
+                            <constraint firstItem="K8w-fg-5fT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="NMM-2I-uam"/>
+                            <constraint firstItem="KZH-Z0-89H" firstAttribute="top" secondItem="K8w-fg-5fT" secondAttribute="bottom" constant="40" id="O2i-NK-pr9"/>
+                            <constraint firstItem="KZH-Z0-89H" firstAttribute="leading" secondItem="NWZ-gL-q6h" secondAttribute="trailing" constant="20" id="OaX-bp-qnJ"/>
+                            <constraint firstItem="KZH-Z0-89H" firstAttribute="width" secondItem="NWZ-gL-q6h" secondAttribute="width" id="ZVc-0c-TIi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KZH-Z0-89H" secondAttribute="trailing" constant="20" id="edz-ld-MiP"/>
+                            <constraint firstItem="NWZ-gL-q6h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fab-Kq-dhh"/>
+                            <constraint firstItem="7fI-cK-Wyg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lFX-xa-Uly"/>
+                            <constraint firstItem="NWZ-gL-q6h" firstAttribute="top" secondItem="K8w-fg-5fT" secondAttribute="bottom" constant="40" id="oze-T6-v5k"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="7fI-cK-Wyg" id="atv-1g-vzP"/>
+                        <outlet property="micButton" destination="NWZ-gL-q6h" id="Os7-OE-Ong"/>
+                        <outlet property="speechTextView" destination="K8w-fg-5fT" id="FTN-z3-iRd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
