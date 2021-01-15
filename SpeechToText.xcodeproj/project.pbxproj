@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF3CF7A1864ED65E23F9C93C /* Pods_SpeechToText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B06BC92D2B3220E6D3518B0 /* Pods_SpeechToText.framework */; };
+		E4A4DABD25B1A7E1003F79BD /* SpeechVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A4DABC25B1A7E1003F79BD /* SpeechVM.swift */; };
+		E4AE085B25B0C8B000300521 /* GoogleSpeechManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AE085A25B0C8B000300521 /* GoogleSpeechManager.swift */; };
+		E4B8793C25AF2ACB008164EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B8793B25AF2ACB008164EA /* AppDelegate.swift */; };
+		E4B8793E25AF2ACB008164EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B8793D25AF2ACB008164EA /* SceneDelegate.swift */; };
+		E4B8794025AF2ACB008164EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B8793F25AF2ACB008164EA /* ViewController.swift */; };
+		E4B8794325AF2ACB008164EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4B8794125AF2ACB008164EA /* Main.storyboard */; };
+		E4B8794525AF2ACE008164EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4B8794425AF2ACE008164EA /* Assets.xcassets */; };
+		E4B8794825AF2ACE008164EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4B8794625AF2ACE008164EA /* LaunchScreen.storyboard */; };
+		E4B8795925AF2C8E008164EA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B8795825AF2C8E008164EA /* BaseViewController.swift */; };
+		E4B8796725AF2CD8008164EA /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B8796625AF2CD8008164EA /* AppConstants.swift */; };
+		E4B879BB25AF863F008164EA /* SpeechRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B879B925AF863F008164EA /* SpeechRecognitionService.swift */; };
+		E4B879BC25AF863F008164EA /* AudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B879BA25AF863F008164EA /* AudioController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1B06BC92D2B3220E6D3518B0 /* Pods_SpeechToText.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeechToText.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		294F43894A51DDDE1254392E /* Pods-SpeechToText.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechToText.debug.xcconfig"; path = "Target Support Files/Pods-SpeechToText/Pods-SpeechToText.debug.xcconfig"; sourceTree = "<group>"; };
+		E4A4DABC25B1A7E1003F79BD /* SpeechVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechVM.swift; sourceTree = "<group>"; };
+		E4A4DACF25B1A9FB003F79BD /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4A4DAD025B1A9FB003F79BD /* RxLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4A4DAD125B1A9FB003F79BD /* RxRelay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxRelay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4A4DAD225B1A9FB003F79BD /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4AE085A25B0C8B000300521 /* GoogleSpeechManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSpeechManager.swift; sourceTree = "<group>"; };
+		E4B8793825AF2ACB008164EA /* SpeechToText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechToText.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B8793B25AF2ACB008164EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E4B8793D25AF2ACB008164EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E4B8793F25AF2ACB008164EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E4B8794225AF2ACB008164EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E4B8794425AF2ACE008164EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E4B8794725AF2ACE008164EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E4B8794925AF2ACE008164EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4B8795825AF2C8E008164EA /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E4B8796625AF2CD8008164EA /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		E4B879B425AF8549008164EA /* SpeechToText-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpeechToText-Bridging-Header.h"; sourceTree = "<group>"; };
+		E4B879B925AF863F008164EA /* SpeechRecognitionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionService.swift; sourceTree = "<group>"; };
+		E4B879BA25AF863F008164EA /* AudioController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioController.swift; sourceTree = "<group>"; };
+		E6F7BD58671C7B1CF62A728F /* Pods-SpeechToText.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechToText.release.xcconfig"; path = "Target Support Files/Pods-SpeechToText/Pods-SpeechToText.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4B8793525AF2ACB008164EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF3CF7A1864ED65E23F9C93C /* Pods_SpeechToText.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E4A4DAF025B21CF3003F79BD /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				E4AE085A25B0C8B000300521 /* GoogleSpeechManager.swift */,
+				E4B879B925AF863F008164EA /* SpeechRecognitionService.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		E4B8792F25AF2ACB008164EA = {
+			isa = PBXGroup;
+			children = (
+				E4B8793A25AF2ACB008164EA /* SpeechToText */,
+				E4B8793925AF2ACB008164EA /* Products */,
+				FDF792512DB0225EABB513E8 /* Pods */,
+				FE669A2BDC4A4E40F3D0E3C5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E4B8793925AF2ACB008164EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4B8793825AF2ACB008164EA /* SpeechToText.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4B8793A25AF2ACB008164EA /* SpeechToText */ = {
+			isa = PBXGroup;
+			children = (
+				E4B8795525AF2B41008164EA /* Views */,
+				E4B8795425AF2B32008164EA /* Utils */,
+				E4B8795225AF2B10008164EA /* Model */,
+				E4B8795125AF2B04008164EA /* ViewModel */,
+				E4B8795025AF2AF0008164EA /* ViewController */,
+				E4B8793B25AF2ACB008164EA /* AppDelegate.swift */,
+				E4B879B425AF8549008164EA /* SpeechToText-Bridging-Header.h */,
+				E4B8793D25AF2ACB008164EA /* SceneDelegate.swift */,
+				E4B8794125AF2ACB008164EA /* Main.storyboard */,
+				E4B8794425AF2ACE008164EA /* Assets.xcassets */,
+				E4B8794625AF2ACE008164EA /* LaunchScreen.storyboard */,
+				E4B8794925AF2ACE008164EA /* Info.plist */,
+			);
+			path = SpeechToText;
+			sourceTree = "<group>";
+		};
+		E4B8795025AF2AF0008164EA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E4B879BA25AF863F008164EA /* AudioController.swift */,
+				E4B8795825AF2C8E008164EA /* BaseViewController.swift */,
+				E4B8793F25AF2ACB008164EA /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E4B8795125AF2B04008164EA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E4A4DAF025B21CF3003F79BD /* Manager */,
+				E4A4DABC25B1A7E1003F79BD /* SpeechVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E4B8795225AF2B10008164EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E4B8795425AF2B32008164EA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E4B8796625AF2CD8008164EA /* AppConstants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E4B8795525AF2B41008164EA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FDF792512DB0225EABB513E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				294F43894A51DDDE1254392E /* Pods-SpeechToText.debug.xcconfig */,
+				E6F7BD58671C7B1CF62A728F /* Pods-SpeechToText.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FE669A2BDC4A4E40F3D0E3C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4A4DACF25B1A9FB003F79BD /* RxCocoa.framework */,
+				E4A4DAD025B1A9FB003F79BD /* RxLibrary.framework */,
+				E4A4DAD125B1A9FB003F79BD /* RxRelay.framework */,
+				E4A4DAD225B1A9FB003F79BD /* RxSwift.framework */,
+				1B06BC92D2B3220E6D3518B0 /* Pods_SpeechToText.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4B8793725AF2ACB008164EA /* SpeechToText */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4B8794C25AF2ACE008164EA /* Build configuration list for PBXNativeTarget "SpeechToText" */;
+			buildPhases = (
+				87BA8520D87CB20A00DD0167 /* [CP] Check Pods Manifest.lock */,
+				E4B8793425AF2ACB008164EA /* Sources */,
+				E4B8793525AF2ACB008164EA /* Frameworks */,
+				E4B8793625AF2ACB008164EA /* Resources */,
+				C5326192D075C650BABE2C1B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpeechToText;
+			productName = SpeechToText;
+			productReference = E4B8793825AF2ACB008164EA /* SpeechToText.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4B8793025AF2ACB008164EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					E4B8793725AF2ACB008164EA = {
+						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
+					};
+				};
+			};
+			buildConfigurationList = E4B8793325AF2ACB008164EA /* Build configuration list for PBXProject "SpeechToText" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E4B8792F25AF2ACB008164EA;
+			productRefGroup = E4B8793925AF2ACB008164EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E4B8793725AF2ACB008164EA /* SpeechToText */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E4B8793625AF2ACB008164EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4B8794825AF2ACE008164EA /* LaunchScreen.storyboard in Resources */,
+				E4B8794525AF2ACE008164EA /* Assets.xcassets in Resources */,
+				E4B8794325AF2ACB008164EA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		87BA8520D87CB20A00DD0167 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpeechToText-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5326192D075C650BABE2C1B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpeechToText/Pods-SpeechToText-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpeechToText/Pods-SpeechToText-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpeechToText/Pods-SpeechToText-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4B8793425AF2ACB008164EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4B879BC25AF863F008164EA /* AudioController.swift in Sources */,
+				E4B879BB25AF863F008164EA /* SpeechRecognitionService.swift in Sources */,
+				E4B8794025AF2ACB008164EA /* ViewController.swift in Sources */,
+				E4A4DABD25B1A7E1003F79BD /* SpeechVM.swift in Sources */,
+				E4B8796725AF2CD8008164EA /* AppConstants.swift in Sources */,
+				E4B8795925AF2C8E008164EA /* BaseViewController.swift in Sources */,
+				E4B8793C25AF2ACB008164EA /* AppDelegate.swift in Sources */,
+				E4AE085B25B0C8B000300521 /* GoogleSpeechManager.swift in Sources */,
+				E4B8793E25AF2ACB008164EA /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E4B8794125AF2ACB008164EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4B8794225AF2ACB008164EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E4B8794625AF2ACE008164EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4B8794725AF2ACE008164EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E4B8794A25AF2ACE008164EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E4B8794B25AF2ACE008164EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E4B8794D25AF2ACE008164EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 294F43894A51DDDE1254392E /* Pods-SpeechToText.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y89LU2A58Y;
+				INFOPLIST_FILE = SpeechToText/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = speechify.SpeechToText;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SpeechToText/SpeechToText-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E4B8794E25AF2ACE008164EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6F7BD58671C7B1CF62A728F /* Pods-SpeechToText.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y89LU2A58Y;
+				INFOPLIST_FILE = SpeechToText/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = speechify.SpeechToText;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SpeechToText/SpeechToText-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4B8793325AF2ACB008164EA /* Build configuration list for PBXProject "SpeechToText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B8794A25AF2ACE008164EA /* Debug */,
+				E4B8794B25AF2ACE008164EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4B8794C25AF2ACE008164EA /* Build configuration list for PBXNativeTarget "SpeechToText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B8794D25AF2ACE008164EA /* Debug */,
+				E4B8794E25AF2ACE008164EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4B8793025AF2ACB008164EA /* Project object */;
+}
